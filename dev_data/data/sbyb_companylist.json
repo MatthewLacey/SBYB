@@ -1,5 +1,6 @@
 [
   {
+    "id": 0,
     "name": "Anheuser-Busch Inbev SA",
     "logo": "https://en.wikipedia.org/wiki/Anheuser-Busch_InBev#/media/File:AB_InBev_logo.svg",
     "industry": "BEVERAGES",
@@ -18,6 +19,7 @@
     ]
   },
   {
+    "id": 1,
     "name": "Budweiser",
     "logo": null,
     "industry": "BEVERAGES",
@@ -29,6 +31,7 @@
     "subsidiaries": []
   },
   {
+    "id": 2,
     "name": "Michelob",
     "logo": null,
     "industry": "BEVERAGES",
@@ -40,6 +43,7 @@
     "subsidiaries": []
   },
   {
+    "id": 3,
     "name": "Stella Artois",
     "logo": null,
     "industry": "BEVERAGES",
@@ -51,6 +55,7 @@
     "subsidiaries": []
   },
   {
+    "id": 4,
     "name": "Becks",
     "logo": null,
     "industry": "BEVERAGES",
@@ -62,6 +67,7 @@
     "subsidiaries": []
   },
   {
+    "id": 5,
     "name": "Kirin",
     "logo": null,
     "industry": "BEVERAGES",
@@ -73,6 +79,7 @@
     "subsidiaries": []
   },
   {
+    "id": 6,
     "name": "Shock Top",
     "logo": null,
     "industry": "BEVERAGES",
