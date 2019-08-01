@@ -55,6 +55,10 @@ const brandSchema = new mongoose.Schema({
   subsidiaries: {
     type: [ObjectId],
     required: false
+  },
+  alternativeBrands: {
+    type: [ObjectId],
+    required: false
   }
 });
 
