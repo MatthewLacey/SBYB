@@ -1,93 +1,65 @@
 [
   {
-    "id": 0,
     "name": "Anheuser-Busch Inbev SA",
     "logo": "https://en.wikipedia.org/wiki/Anheuser-Busch_InBev#/media/File:AB_InBev_logo.svg",
     "industry": "BEVERAGES",
-    "num_employees": 182915,
-    "sustainability_score": 5,
-    "culture_score": 8,
-    "political_score": 5,
-    "parent": null,
-    "subsidiaries": [
-      "Budweiser",
-      "Michelob",
-      "Stella Artois",
-      "Becks",
-      "Kirin",
-      "Shock Top"
-    ]
+    "numEmployees": 182915,
+    "sustainabilityScore": 5,
+    "cultureScore": 8,
+    "politicalScore": "L1"
   },
   {
-    "id": 1,
     "name": "Budweiser",
-    "logo": null,
     "industry": "BEVERAGES",
-    "num_employees": 3000,
-    "sustainability_score": 6,
-    "culture_score": 7,
-    "political_score": 10,
-    "parent": "Anheuser-Busch Inbev SA",
-    "subsidiaries": []
+    "numEmployees": 3000,
+    "sustainabilityScore": 6,
+    "cultureScore": 7,
+    "politicalScore": "R2",
+    "parentId": "5d4365b14b75d261c3dd5dd1"
   },
   {
-    "id": 2,
     "name": "Michelob",
-    "logo": null,
     "industry": "BEVERAGES",
-    "num_employees": 1500,
-    "sustainability_score": 3,
-    "culture_score": 7,
-    "political_score": 13,
-    "parent": "Anheuser-Busch Inbev SA",
-    "subsidiaries": []
+    "numEmployees": 1500,
+    "sustainabilityScore": 3,
+    "cultureScore": 7,
+    "politicalScore": "R3",
+    "parentId": "5d4365b14b75d261c3dd5dd1"
   },
   {
-    "id": 3,
     "name": "Stella Artois",
-    "logo": null,
     "industry": "BEVERAGES",
-    "num_employees": 500,
-    "sustainability_score": 7,
-    "culture_score": 7,
-    "political_score": 7,
-    "parent": "Anheuser-Busch Inbev SA",
-    "subsidiaries": []
+    "numEmployees": 500,
+    "sustainabilityScore": 7,
+    "cultureScore": 7,
+    "politicalScore": "L3",
+    "parentId": "5d4365b14b75d261c3dd5dd1"
   },
   {
-    "id": 4,
     "name": "Becks",
-    "logo": null,
     "industry": "BEVERAGES",
-    "num_employees": 350,
-    "sustainability_score": 6,
-    "culture_score": 8,
-    "political_score": 16,
-    "parent": "Anheuser-Busch Inbev SA",
-    "subsidiaries": []
+    "numEmployees": 350,
+    "sustainabilityScore": 6,
+    "cultureScore": 8,
+    "politicalScore": "R4",
+    "parentId": "5d4365b14b75d261c3dd5dd1"
   },
   {
-    "id": 5,
     "name": "Kirin",
-    "logo": null,
     "industry": "BEVERAGES",
-    "num_employees": 1000,
-    "sustainability_score": 3,
-    "culture_score": 6,
-    "political_score": 10,
-    "parent": "Anheuser-Busch Inbev SA",
-    "subsidiaries": []
+    "numEmployees": 1000,
+    "sustainabilityScore": 3,
+    "cultureScore": 6,
+    "politicalScore": "L2",
+    "parentId": "5d4365b14b75d261c3dd5dd1"
   },
   {
-    "id": 6,
     "name": "Shock Top",
-    "logo": null,
     "industry": "BEVERAGES",
-    "num_employees": 400,
-    "sustainability_score": 5,
-    "culture_score": 7,
-    "political_score": 3,
-    "parent": "Anheuser-Busch Inbev SA",
-    "subsidiaries": []
+    "numEmployees": 400,
+    "sustainabilityScore": 5,
+    "cultureScore": 7,
+    "politicalScore": "L4",
+    "parentId": "5d4365b14b75d261c3dd5dd1"
   }
 ]

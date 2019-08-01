@@ -1,25 +1,75 @@
 const Brand = require('./../models/brandModel');
 
-exports.getAllBrands = (req, res) => {
-  res.status(200).json({
-    status: 'success',
-    requestedAt: req.requestTime
-    // results: brands.length,
-    // data: {
-    //   brands
-    // }
-  });
+exports.getAllBrands = async (req, res) => {
+  try {
+    const brands = await Brand.find();
+
+    res.status(200).json({
+      status: 'success',
+      results: brands.length,
+      data: {
+        brands
+      }
+    });
+  } catch (err) {
+    res.status(404).json({
+      status: 'failure',
+      message: err
+    });
+  }
 };
 
-exports.getBrand = (req, res) => {
-  // const id = req.params.id * 1;
+exports.getBrand = async (req, res) => {
+  try {
+    const brand = await Brand.findById(req.params.id);
+    res.status(200).json({
+      status: 'success',
+      data: {
+        brand
+      }
+    });
+  } catch (err) {
+    res.status(404).json({
+      status: 'failure',
+      message: err
+    });
+  }
+};
 
-  // const brand = brands.find(el => el.id === id);
+exports.createBrand = async (req, res) => {
+  try {
+    const newBrand = await Brand.create(req.body);
 
-  res.status(200).json({
-    status: 'success'
-    // data: {
-    //   brand
-    // }
-  });
+    res.status(201).json({
+      status: 'success',
+      data: {
+        brand: newBrand
+      }
+    });
+  } catch (err) {
+    res.status(400).json({
+      status: 'failure',
+      message: err
+    });
+  }
+};
+
+exports.updateBrand = async (req, res) => {
+  try {
+    const brand = await Brand.findByIdAndUpdate(req.params.id, req.body, {
+      new: true,
+      runValidators: true
+    });
+    res.status(200).json({
+      status: 'success',
+      data: {
+        brand
+      }
+    });
+  } catch (err) {
+    res.status(404).json({
+      status: 'failure',
+      message: err
+    });
+  }
 };
