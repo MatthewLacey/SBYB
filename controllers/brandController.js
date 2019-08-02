@@ -67,7 +67,23 @@ exports.updateBrand = async (req, res) => {
       }
     });
   } catch (err) {
-    res.status(404).json({
+    res.status(400).json({
+      status: 'failure',
+      message: err
+    });
+  }
+};
+
+exports.deleteBrand = async (req, res) => {
+  try {
+    await Brand.findByIdAndDelete(req.params.id);
+
+    res.status(204).json({
+      status: 'succes',
+      data: null
+    });
+  } catch (err) {
+    res.status(400).json({
       status: 'failure',
       message: err
     });
